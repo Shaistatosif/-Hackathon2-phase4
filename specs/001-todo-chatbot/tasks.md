@@ -124,9 +124,9 @@
 - [x] T046 [P] [US4] Create frontend Dockerfile with build stage + nginx in frontend/Dockerfile
 - [x] T047 [P] [US4] Create nginx.conf for frontend serving with API proxy in frontend/nginx.conf
 - [x] T048 [P] [US4] Create frontend .dockerignore in frontend/.dockerignore
-- [ ] T049 [US4] Verify backend image builds and runs: docker build -t todo-backend ./backend
-- [ ] T050 [US4] Verify frontend image builds and runs: docker build -t todo-frontend ./frontend
-- [ ] T051 [US4] Verify container sizes meet spec (<500MB frontend, <300MB backend)
+- [x] T049 [US4] Verify backend image builds and runs: docker build -t todo-backend ./backend
+- [x] T050 [US4] Verify frontend image builds and runs: docker build -t todo-frontend ./frontend
+- [x] T051 [US4] Verify container sizes meet spec (<500MB frontend, <300MB backend)
 
 **Checkpoint**: User Story 4 complete - Both images build, containers run, size constraints met
 
@@ -174,8 +174,8 @@
 
 ## Implementation Summary
 
-**Completed Tasks**: 65/71 (91.5%)
-**Remaining Tasks**: 6 (Docker/Minikube verification tasks)
+**Completed Tasks**: 68/71 (95.8%)
+**Remaining Tasks**: 3 (Minikube verification tasks)
 
 | Phase | Status | Tasks Completed |
 |-------|--------|-----------------|
@@ -183,11 +183,10 @@
 | Phase 2: Foundational | ✅ Complete | 9/9 |
 | Phase 3: US1 (P1) | ✅ Complete | 14/14 |
 | Phase 4: US2 (P2) | ✅ Complete | 11/11 |
-| Phase 5: US4 (P4) | ✅ Code Complete | 5/8 |
+| Phase 5: US4 (P4) | ✅ Complete | 8/8 |
 | Phase 6: US3 (P3) | ✅ Code Complete | 12/15 |
 | Phase 7: Polish | ✅ Code Complete | 4/5 |
 
-**Note**: Remaining 6 tasks require Docker Desktop to be running:
-- T049, T050, T051: Docker image builds and size verification
+**Note**: Remaining 3 tasks require Minikube:
 - T064, T065, T066: Minikube deployment verification
 - T071: High availability test (kill frontend pod)
