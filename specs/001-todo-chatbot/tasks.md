@@ -152,9 +152,9 @@
 - [x] T061 [US3] Add resource requests/limits to deployment templates
 - [x] T062 [US3] Create .helmignore in helm/todo-chatbot/.helmignore
 - [x] T063 [US3] Validate Helm chart with helm lint helm/todo-chatbot
-- [ ] T064 [US3] Test deployment: minikube start, build images, helm install todo-chatbot ./helm/todo-chatbot
-- [ ] T065 [US3] Verify all pods reach Running status within 2 minutes
-- [ ] T066 [US3] Verify frontend accessible via minikube service todo-frontend --url
+- [x] T064 [US3] Test deployment: minikube start, build images, helm install todo-chatbot ./helm/todo-chatbot
+- [x] T065 [US3] Verify all pods reach Running status within 2 minutes
+- [x] T066 [US3] Verify frontend accessible via minikube service todo-frontend --url
 
 **Checkpoint**: User Story 3 complete - Full K8s deployment working, accessible via NodePort
 
@@ -168,14 +168,13 @@
 - [x] T068 [P] Add responsive design breakpoints to frontend/src/styles/App.css
 - [x] T069 Verify all edge cases from spec: empty todo, long messages, backend unavailable
 - [x] T070 Run full end-to-end validation per quickstart.md
-- [ ] T071 Verify high availability: kill one frontend pod, confirm app stays accessible
+- [x] T071 Verify high availability: kill one frontend pod, confirm app stays accessible
 
 ---
 
 ## Implementation Summary
 
-**Completed Tasks**: 68/71 (95.8%)
-**Remaining Tasks**: 3 (Minikube verification tasks)
+**Completed Tasks**: 71/71 (100%) ✅
 
 | Phase | Status | Tasks Completed |
 |-------|--------|-----------------|
@@ -184,9 +183,7 @@
 | Phase 3: US1 (P1) | ✅ Complete | 14/14 |
 | Phase 4: US2 (P2) | ✅ Complete | 11/11 |
 | Phase 5: US4 (P4) | ✅ Complete | 8/8 |
-| Phase 6: US3 (P3) | ✅ Code Complete | 12/15 |
-| Phase 7: Polish | ✅ Code Complete | 4/5 |
+| Phase 6: US3 (P3) | ✅ Complete | 15/15 |
+| Phase 7: Polish | ✅ Complete | 5/5 |
 
-**Note**: Remaining 3 tasks require Minikube:
-- T064, T065, T066: Minikube deployment verification
-- T071: High availability test (kill frontend pod)
+**All tasks completed and verified!**
